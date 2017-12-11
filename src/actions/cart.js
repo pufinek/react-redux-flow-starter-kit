@@ -4,4 +4,4 @@ export const addToCart = (item) => {
         type: 'add',
         item
     };
-  }
+  };

@@ -5,15 +5,12 @@ import * as cartActions from '../actions/cart';
 import Shelf from './shelf';
 
 class Cart extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-    }
-  }
+
   render() {
     const cartList = this.props.cart.map((item, idx) => {
         return <li key={idx}>{item}</li>;
     });
+
     return (
       <div className="Cart">
         <Shelf addItem={this.props.actions.addToCart}/>
@@ -33,6 +30,6 @@ function mapStateToProps(state, props) {
 function mapDispatchToProps(dispatch) {
     return {
         actions: bindActionCreators(cartActions, dispatch)
-    }
+    };
 }
 export default connect(mapStateToProps, mapDispatchToProps)(Cart);

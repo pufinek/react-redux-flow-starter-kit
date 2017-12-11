@@ -1,4 +1,3 @@
-
 // @flow
 import React from 'react';
 import { Route, Link } from 'react-router-dom';
@@ -23,6 +22,6 @@ const App = () => (
 			<Route exact path="/about-us" component={About} />
 		</main>
 	</div>
-)
+);
 
-export default App
+export default App;

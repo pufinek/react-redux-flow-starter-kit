@@ -7,6 +7,6 @@ const About = () => (
     <p>Did you get here via Redux?</p>
     <Cart />
   </div>
-)
+);
 
-export default About
+export default About;
