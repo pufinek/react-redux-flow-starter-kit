@@ -10,6 +10,7 @@ module.exports = {
         "no-use-before-define": "error",
         "curly": [ "warn", "all" ],
         "object-curly-spacing": [ "warn", "always" ],
-        "no-useless-escape": "off"
+        "no-useless-escape": "off",
+        "jsx-a11y/href-no-hash":0
     }
 };
